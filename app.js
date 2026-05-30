@@ -39,12 +39,15 @@ async function registrar() {
 
   if (error) {
 
-    console.error(error)
+  console.error(error)
 
-    alert('Erro ao registrar')
+  alert(
+    'Erro: ' +
+    error.message
+  )
 
-    return
-  }
+  return
+}
 
   document.getElementById('mensagem').innerText =
     'Participação registrada com sucesso!'
