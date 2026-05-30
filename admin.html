@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin - Expo Connect</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+</head>
+
+<body>
+
+<div class="page">
+
+<div class="logo">
+
+<h1 style="color:white;">
+Expo Connect
+</h1>
+
+<p style="color:#dbeafe;">
+Painel Administrativo
+</p>
+
+</div>
+
+<div class="admin-grid">
+
+<div class="painel">
+
+<div class="stats">
+
+<div class="stat">
+<strong id="total">0</strong>
+<span>Total</span>
+</div>
+
+<div class="stat">
+<strong id="restantes">0</strong>
+<span>Restantes</span>
+</div>
+
+</div>
+
+<h2>Participantes</h2>
+
+<div id="lista" class="lista-participantes"></div>
+
+</div>
+
+<div class="painel">
+
+<div class="resultado-box">
+
+<h3>Último sorteado</h3>
+
+<div
+id="resultado"
+class="nome-sorteado"
+>
+—
+</div>
+
+</div>
+
+<select id="filtroGenero">
+
+<option value="ambos">
+Ambos
+</option>
+
+<option value="Masculino">
+Masculino
+</option>
+
+<option value="Feminino">
+Feminino
+</option>
+
+</select>
+
+<button onclick="sortear()">
+🎉 REALIZAR SORTEIO
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
