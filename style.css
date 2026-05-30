@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0057b8, #003f87);
+  color: #1e293b;
+  padding: 30px;
+}
+
+.page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 60px);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logo h1 {
+  font-size: 48px;
+  color: #0057b8;
+  margin-bottom: 10px;
+}
+
+.logo p {
+  color: #64748b;
+  font-size: 18px;
+}
+
+.input-group {
+  margin-top: 30px;
+}
+
+input {
+  width: 100%;
+  padding: 18px;
+  border-radius: 14px;
+  border: 2px solid #dbeafe;
+  font-size: 16px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #0057b8;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 18px;
+  border: none;
+  border-radius: 14px;
+  background: #0057b8;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #003f87;
+  transform: translateY(-2px);
+}
+
+.success {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #16a34a;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.painel {
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.painel h2 {
+  margin-bottom: 20px;
+  color: #0057b8;
+}
+
+.resultado-box {
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+  background: #eff6ff;
+  margin-bottom: 30px;
+}
+
+.resultado-box h3 {
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.nome-sorteado {
+  font-size: 36px;
+  font-weight: bold;
+  color: #0057b8;
+  word-break: break-word;
+}
+
+.lista-participantes {
+  max-height: 700px;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.participante {
+  padding: 14px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  background: #16a34a;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+.stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  flex: 1;
+  background: #eff6ff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat strong {
+  display: block;
+  font-size: 28px;
+  color: #0057b8;
+}
+
+.stat span {
+  color: #64748b;
+}
+
+@media (max-width: 900px) {
+
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lista-participantes {
+    grid-template-columns: 1fr;
+  }
+
+  .logo h1 {
+    font-size: 36px;
+  }
+
+  .nome-sorteado {
+    font-size: 28px;
+  }
+}
