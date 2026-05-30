@@ -1,4 +1,4 @@
-const supabaseUrl = 'https://lhmefsgbknxmotvctmyv.supabase.co/rest/v1/'
+const supabaseUrl = 'https://lhmefsgbknxmotvctmyv.supabase.co'
 const supabaseKey = 'sb_publishable_0p8MDwEFYtPVHxi-DM4_rQ_VkQvbsMC'
 
 const client = supabase.createClient(
